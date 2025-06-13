@@ -1,0 +1,12 @@
+{
+  "name": "ml-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "python3 app.py",
+    "dev": "python3 app.py",
+    "install": "pip3 install -r requirements.txt"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

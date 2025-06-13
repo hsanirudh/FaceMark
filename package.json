@@ -1,0 +1,22 @@
+{
+  "name": "facemark",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "start": "turbo start",
+    "clean": "turbo clean",
+    "install": "turbo install",
+    "dev:web": "turbo dev --filter=web",
+    "dev:ml": "turbo dev --filter=ml-service"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.16",
+    "@types/node": "^20.8.0",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "workspaces": [
+    "apps/*"
+  ]
+}
