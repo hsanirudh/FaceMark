@@ -1,0 +1,33 @@
+# Ignore node_modules and caches
+**/node_modules
+**/.turbo
+**/.next
+**/.expo
+**/.parcel-cache
+**/dist
+**/build
+
+# Ignore env and secrets
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Ignore Git and CI stuff
+.git
+.gitignore
+Dockerfile
+.dockerignore
+.vscode
+.idea
+*.log
+.DS_Store
+
+# ML Service specific ignores
+**/apps/ml-service/uploads/*
+**/apps/ml-service/dataset_embeddings.pkl
+**/apps/ml-service/__pycache__
+**/apps/ml-service/**/__pycache__
+**/apps/ml-service/.pytest_cache
+
+# Keep the original monolithic app.py for reference but don't copy to container
+apps/ml-service/app.py
